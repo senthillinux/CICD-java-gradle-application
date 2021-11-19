@@ -7,7 +7,6 @@ pipeline{
                 sh './gradlew build'
             }
         }
-    } 
         stage("sonar quality check"){
             steps{
                 script{
@@ -19,3 +18,4 @@ pipeline{
             }
         }
     }
+}
